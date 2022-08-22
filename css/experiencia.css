@@ -39,6 +39,11 @@
     position: relative;
 }
 
+.empresa:hover {
+    box-shadow: 10px 10px 20px #d3d3d3;
+    left: 10px;
+}
+
 .empresa::before {
     content: '';
     display: block;
@@ -48,6 +53,12 @@
     position: absolute;
     top: 20px;
     left: -4px;
+    transition: 0.4s ease-in;
+}
+
+.empresa:hover::before {
+    top: 26px;
+    background: #141414;
 }
 
 .empresa-ano {
